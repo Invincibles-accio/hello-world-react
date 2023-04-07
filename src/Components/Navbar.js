@@ -1,9 +1,10 @@
 // import "../style.css"
 
-const Navbar = () => {
+const Navbar = (props) => {
     return(
         <nav className="navbar">
-            <h1>Abhishek Shankar Choudhary</h1>
+            <h1>{props.name}</h1>
+             {props.children}
             <div className="links">
                 <a href="#">Home</a>
                 <a href="#">About</a>
